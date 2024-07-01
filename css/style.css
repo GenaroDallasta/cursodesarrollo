@@ -1,0 +1,65 @@
+header{
+  display: flex;
+  background-color: gray;
+  justify-content: space-between;
+  min-height: 120px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.limpiarFormulario {
+  background-color: red;
+}
+
+.enviarFormulario {
+  background-color: green;
+}
+
+footer {
+  background-color: rgb(114, 114, 114);
+  color: white;
+}
+
+
+@media (max-width:700px) {
+  header {
+    flex-direction: column;
+  }
+
+  .productos {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  };
+}
+
