@@ -14,6 +14,11 @@ header{
   color:white;
 }
 
+.navlink {
+  display: inline;
+  text-decoration: none;
+}
+
 ul {
   text-decoration: none;
 }
@@ -37,6 +42,36 @@ nav a {
 
 a {
   text-decoration: none;
+}
+
+.titulo-preguntas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.accordion {
+  margin-bottom: 50px;
+}
+
+.texto-nosotros {
+  display: flex;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 210px;
+  margin-right: 210px;
+  padding-bottom: 150px;
+  color: rgb(0, 0, 0);  
+}
+
+.imagen-nosotros {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -103,29 +138,67 @@ list-style: none;
 .carousel-inner {
   width: 500px;
   height: 500px;
-
+  margin-top: 40px;
 }
 
-.limpiarFormulario {
-  background-color: red;
+.contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
 }
 
-.enviarFormulario {
-  background-color: green;
+h1 {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+align-items: center;
+}
+
+h2 {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.align-items-center {
+  margin-bottom: 50px;
+  padding-left: 100px;
+}
+
+.productos-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .productos {
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.productos:hover {
+  transform: translateY(-10px);
+  border: black 2px solid;
 }
 
 @media (max-width:700px) {
   header {
     flex-direction: column;
   }
-
-  .productos {
+  .texto-nosotros {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+  .imagen-nosotros {
+    width: 400px;
+    height: 400px;
+  }
+  .productos-menu {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   nav {
     padding: 10px 0px;
